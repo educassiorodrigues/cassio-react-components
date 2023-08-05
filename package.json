@@ -20,7 +20,7 @@
     "rollup": "^3.27.2",
     "rollup-plugin-dts": "^5.3.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-your-function": "^0.5.3",
     "styled-components": "^6.0.7",
     "typescript": "^5.1.6"
   }
