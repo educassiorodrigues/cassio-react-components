@@ -3,22 +3,9 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import terser from '@rollup/plugin-terser';
 
-const packageJson = require("./package.json");
-import { yourFunction } from "rollup-plugin-your-function";
-
-const terser = () => yourFunction({
-    output: true,
-    name: "terser",
-    fn: async (source, options) => minify(
-        source,
-        {
-            module: (/^esm?$/).test(options.outputOptions.format),
-            toplevel: options.outputOptions.format === "cjs",
-            sourceMap: true
-        }
-    )
-});
+const packageJson = require("./package.json")
 
 export default [
   {
