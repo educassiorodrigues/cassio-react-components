@@ -8,7 +8,8 @@
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -40,6 +41,7 @@
     "rollup-plugin-your-function": "^0.5.3",
     "storybook": "^7.2.1",
     "styled-components": "^6.0.7",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "ts-node-dev": "^2.0.0"
   }
 }
